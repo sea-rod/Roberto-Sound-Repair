@@ -99,6 +99,42 @@ background-color: rgb(197, 30, 55);
 .row .hidden:nth-child(3) {
     transition-delay: 300ms;
 }
+
+.get-in-touch {
+    height: 200px;
+    width: 100%;
+    background-image: url("/img/speaker.png");
+    background-size: cover;
+}
+
+.banner {
+    width: 350px;
+    font-size: 2rem;
+}
+
+p.hidden.banner{
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+p.show.banner{
+    opacity: 1;
+    transform:translate(0) ;
+}
+
+.touch-btn {
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: var(--bg-red);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--bg-red);
+}
+
+
+
+
 @media (max-width: 991px) {
     #hero div {
         text-align: center;
