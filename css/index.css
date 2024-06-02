@@ -115,6 +115,7 @@ background-color: rgb(197, 30, 55);
 p.hidden.banner{
     opacity: 0;
     transform: translateY(-100px);
+    transition-delay: 0.5s;
 }
 
 p.show.banner{
