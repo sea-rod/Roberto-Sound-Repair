@@ -71,3 +71,24 @@ h2{
     margin-top: 10%;
 }
 
+.get-in-touch {
+    height: 200px;
+    width: 100%;
+    background-image: url("/img/speaker.png");
+    background-size: cover;
+}
+
+.banner{
+    width: 350px;
+    font-size: 2rem;
+}
+
+.touch-btn {
+    height: 50px;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: rgb(249, 45, 76);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(249, 45, 76);
+}
