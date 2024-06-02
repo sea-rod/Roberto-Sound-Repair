@@ -2,6 +2,7 @@
     --bg-color:rgb(12, 12, 12);
     --text-color:rgb(235, 235, 235);
     --sec-text:rgb(149, 149, 149);
+    --bg-red:rgb(249, 45, 76);
 
 }
 
@@ -18,6 +19,15 @@ body{
     color: var(--text-color);
 }
 
+.navbar-toggler{
+    color: var(--text-color);
+    box-shadow: none;
+    border: 1px solid var(--text-color);
+}
+
+nav ul {
+    padding-left: 0;
+}
 
 .title{
     font-size: 3.8vmax
@@ -28,13 +38,19 @@ body{
 
 .cta-btn{
     border-radius: 20px;
-    background-color: rgb(249, 45, 76);
+    background-color: var(--bg-red);
     border: none;
     color: var(--text-color);
+    transition: 0.5s;
+}
+
+.cta-btn:hover{
+background-color: rgb(197, 30, 55);
 }
 
 #hero img {
     width: 100%;
+    
 }
 
 .hcard{
@@ -43,9 +59,15 @@ body{
     /* background-color: aqua; */
 }
 
+.card-container{
+    /* box-sizing: border-box; */
+    width: 100%;
+}
+
 .hcard img{
     width:100%;
     height: 250px;
+    object-fit: cover;
 }
 
 .hcard-title{
