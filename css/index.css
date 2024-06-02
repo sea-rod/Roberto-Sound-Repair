@@ -1,0 +1,64 @@
+:root{
+    --bg-color:rgb(12, 12, 12);
+    --text-color:rgb(235, 235, 235);
+    --sec-text:rgb(149, 149, 149);
+
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.bg-dark{
+    background-color: rgb(28, 28, 28);
+}
+
+.navbar-brand,.nav-link{
+    color: var(--text-color);
+}
+
+
+.title{
+    font-size: 3.8vmax
+}
+.content{
+    text-align: justify;
+}
+
+.cta-btn{
+    border-radius: 20px;
+    background-color: rgb(249, 45, 76);
+    border: none;
+    color: var(--text-color);
+}
+
+#hero img {
+    width: 100%;
+}
+
+.hcard{
+    border-radius: 20px;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+.hcard img{
+    width:100%;
+    height: 250px;
+}
+
+.hcard-title{
+    font-weight: bold;
+}
+.hcard-content{
+    color: var(--sec-text) ;
+    text-align:justify ;
+}
+
+@media (max-width: 991px) {
+    #hero div {
+        text-align: center;
+    }
+    
+}
