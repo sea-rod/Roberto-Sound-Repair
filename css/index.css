@@ -78,6 +78,27 @@ background-color: rgb(197, 30, 55);
     text-align:justify ;
 }
 
+.hidden{
+    opacity: 0;
+    transition: 0.5s;
+    filter: blur(30);
+    transform: translate(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+
+.row .hidden:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.row .hidden:nth-child(3) {
+    transition-delay: 300ms;
+}
 @media (max-width: 991px) {
     #hero div {
         text-align: center;
