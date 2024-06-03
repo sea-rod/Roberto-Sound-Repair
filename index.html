@@ -15,12 +15,12 @@
     />
     <script defer src="js/app.js"></script>
     <link rel="stylesheet" href="/css/index.css" />
-    <title>Roberto-Sound Repair</title>
+    <title>Roberto - Sound Repair</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark text-white">
       <div class="container-fluid">
-        <a class="navbar-brand ms-lg-5" href="#">Roberto</a>
+        <a class="navbar-brand ms-lg-5" href="#">Roberto.P Lobo</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,6 +40,10 @@
             <li class="nav-item mx-lg-5">
               <a class="nav-link" href="#">About Us</a>
             </li>
+            <li class="nav-item mx-lg-5">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <hr />
             <li class="nav-item me-4 ms-lg-5 my-auto">
               <a class="nav-link cta-btn px-3 py-1 col-5 col-lg-12" href="#"
                 >Contact Us</a
@@ -53,19 +57,19 @@
     <div class="mx-lg-5 mx-3">
       <div class="row mt-4 mt-lg-5 mb-5" id="hero">
         <div class="col-lg-6 col-12">
-          <p class="h1 title">
+          <p class="h1 title hidden">
             Revive Your Sound - Expert Repairs for Speakers, Mics, and More
           </p>
-          <p class="content mb-0 mt-5">
+          <p class="content mb-0 mt-5 hidden">
             Welcome to Robert Sound Repair, your go-to for top-notch repairs on
             speakers, microphones, and all sound gear. Our expert technicians
             ensure your devices deliver perfect sound every time. Experience the
             difference today!
           </p>
-          <button class="cta-btn px-3 py-1 my-5">Contact Now</button>
+          <button class="cta-btn px-3 py-1 my-5 hidden">Contact Now</button>
         </div>
-        <div class="col-lg-6 col-12 mt-">
-          <img src="img/hero.jpg" alt="" />
+        <div class="col-lg-6 col-12 overflow-hidden">
+          <img src="img/hero.jpg" class="hidden" alt="" />
         </div>
       </div>
 
@@ -74,48 +78,54 @@
           Our Services
         </p>
         <div class="col-lg-3 col-12 hcard p-0 mt-3 mx-3 hidden">
-          <div>
-            <img src="/img/repair.jpg" alt="" />
-          </div>
-          <div>
-            <p class="hcard-title">Speaker Repair and Upgrades</p>
-            <p class="hcard-content">
-              Our expert technicians diagnose and repair all types of speakers,
-              offering custom upgrades for enhanced sound quality and
-              performance. Extend your speakers' lifespan with our
-              cost-effective and reliable services.
-            </p>
-          </div>
+          <a href="#">
+            <div>
+              <img src="/img/repair.jpg" alt="" />
+            </div>
+            <div>
+              <p class="hcard-title">Speaker Repair and Upgrades</p>
+              <p class="hcard-content">
+                Our expert technicians diagnose and repair all types of
+                speakers, offering custom upgrades for enhanced sound quality
+                and performance. Extend your speakers' lifespan with our
+                cost-effective and reliable services.
+              </p>
+            </div>
+          </a>
         </div>
 
         <div class="col-lg-3 col-12 hcard p-0 mt-3 mx-3 hidden">
-          <div>
-            <img src="/img/repair.jpg" alt="" />
-          </div>
-          <div>
-            <p class="hcard-title">Microphone Repair and Maintenance</p>
-            <p class="hcard-content">
-              We fix dynamic, condenser, and wireless microphones, addressing
-              issues like crackling and low output. Regular maintenance ensures
-              clear sound and reliability, prolonging your microphone's lifespan
-              and performance.
-            </p>
-          </div>
+          <a href="">
+            <div>
+              <img src="/img/repair.jpg" alt="" />
+            </div>
+            <div>
+              <p class="hcard-title">Microphone Repair and Maintenance</p>
+              <p class="hcard-content">
+                We fix dynamic, condenser, and wireless microphones, addressing
+                issues like crackling and low output. Regular maintenance
+                ensures clear sound and reliability, prolonging your
+                microphone's lifespan and performance.
+              </p>
+            </div>
+          </a>
         </div>
 
         <div class="col-lg-3 col-12 hcard p-0 mt-3 mx-3 hidden">
-          <div>
-            <img src="/img/repair.jpg" alt="" />
-          </div>
-          <div>
-            <p class="hcard-title">Stage Lighting Repair and Maintenance</p>
-            <p class="hcard-content">
-              Comprehensive repair and maintenance for stage lighting, including
-              can lights and sharpies. We fix electrical issues, replace bulbs,
-              and perform preventative maintenance, ensuring reliable and
-              stunning visual effects for your events.
-            </p>
-          </div>
+          <a href="">
+            <div>
+              <img src="/img/repair.jpg" alt="" />
+            </div>
+            <div>
+              <p class="hcard-title">Stage Lighting Repair and Maintenance</p>
+              <p class="hcard-content">
+                Comprehensive repair and maintenance for stage lighting,
+                including can lights and sharpies. We fix electrical issues,
+                replace bulbs, and perform preventative maintenance, ensuring
+                reliable and stunning visual effects for your events.
+              </p>
+            </div>
+          </a>
         </div>
       </div>
 
@@ -124,6 +134,43 @@
           <p class="banner hidden">Quality Service Within a Short Time.</p>
           <button class="touch-btn hidden">GET IN TOUCH</button>
         </div>
+      </div>
+
+      <p class="h2">Gallery</p>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/repair.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/hero.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
       <div class="my-5">
@@ -139,8 +186,6 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
-      
     </div>
 
     <script

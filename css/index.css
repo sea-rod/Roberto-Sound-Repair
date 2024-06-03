@@ -6,6 +6,11 @@
 
 }
 
+a{
+    text-decoration: none;
+    color: parent;
+}
+
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -30,7 +35,7 @@ nav ul {
 }
 
 .title{
-    font-size: 3.8vmax
+    font-size: 3.8vmax;
 }
 .content{
     text-align: justify;
@@ -42,6 +47,8 @@ nav ul {
     border: none;
     color: var(--text-color);
     transition: 0.5s;
+    width: 150px;
+    text-align: center;
 }
 
 .cta-btn:hover{
@@ -71,6 +78,7 @@ background-color: rgb(197, 30, 55);
 }
 
 .hcard-title{
+    color: var(--text-color);
     font-weight: bold;
 }
 .hcard-content{
@@ -100,27 +108,42 @@ background-color: rgb(197, 30, 55);
     transition-delay: 300ms;
 }
 
+#carouselExampleAutoplaying div div img {
+    height: 300px;
+    object-fit: contain;
+}
+
 .get-in-touch {
     height: 200px;
     width: 100%;
     background-image: url("/img/speaker.png");
     background-size: cover;
 }
-
 .banner {
     width: 350px;
     font-size: 2rem;
 }
 
-p.hidden.banner{
+p.hidden{
     opacity: 0;
     transform: translateY(-100px);
     transition-delay: 0.5s;
 }
 
-p.show.banner{
+p.show{
     opacity: 1;
     transform:translate(0) ;
+}
+
+img.hidden{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+img.show{
+    opacity: 1;
+    transform: translate(0);
 }
 
 .touch-btn {
