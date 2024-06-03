@@ -8,7 +8,10 @@
 
 a{
     text-decoration: none;
-    color: parent;
+}
+
+.text-red{
+    color: var(--bg-red);
 }
 
 body{
@@ -22,6 +25,11 @@ body{
 
 .navbar-brand,.nav-link{
     color: var(--text-color);
+}
+
+.navbar-brand{
+    font-family: monospace;
+    font-size: xx-large;
 }
 
 .navbar-toggler{
@@ -57,7 +65,6 @@ background-color: rgb(197, 30, 55);
 
 #hero img {
     width: 100%;
-    
 }
 
 .hcard{
@@ -156,12 +163,32 @@ img.show{
     color: var(--bg-red);
 }
 
+#footer {
+    background-color: #2d2d2d;
+    padding: 40px 0;
+    color: #767676;
+    position: relative;
+    margin-top: 300px;
+    text-align: justify;
+}
 
+#footer a{
+    color: var(--sec-text);
+}
 
+#footer a:hover{
+    color: var(--bg-red);
+}
 
-@media (max-width: 991px) {
-    #hero div {
-        text-align: center;
-    }
-    
+.social-media a,
+.social-media {
+    color: rgb(138, 138, 138);
+    margin-bottom: 20px;
+    font-size: 24px;
+    word-spacing: 3ch;
+}
+
+.social-media a:hover {
+    color: var(--bg-red);
+    transition: 0.5s;
 }
