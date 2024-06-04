@@ -1,9 +1,8 @@
-:root{
-    --bg-color:rgb(12, 12, 12);
-    --text-color:rgb(235, 235, 235);
-    --sec-text:rgb(149, 149, 149);
-    --bg-red:rgb(249, 45, 76);
-
+:root {
+  --bg-color: rgb(12, 12, 12);
+  --text-color: rgb(235, 235, 235);
+  --sec-text: rgb(149, 149, 149);
+  --bg-red: rgb(249, 45, 76);
 }
 
 body {
@@ -20,36 +19,36 @@ body {
   color: var(--text-color);
 }
 
-.navbar-brand{
-    font-family: monospace;
-    font-size: xx-large;
+.navbar-brand {
+  font-family: monospace;
+  font-size: xx-large;
 }
 
-.navbar-toggler{
-    color: var(--text-color);
-    box-shadow: none;
-    border: 1px solid var(--text-color);
+.navbar-toggler {
+  color: var(--text-color);
+  box-shadow: none;
+  border: 1px solid var(--text-color);
 }
 
 nav ul {
   padding-left: 0;
 }
 
-.title{
-    font-size: 3.8vmax;
+.title {
+  font-size: 3.8vmax;
 }
-.content{
-    text-align: justify;
+.content {
+  text-align: justify;
 }
 
-.cta-btn{
-    border-radius: 20px;
-    background-color: var(--bg-red);
-    border: none;
-    color: var(--text-color);
-    transition: 0.5s;
-    width: 150px;
-    text-align: center;
+.cta-btn {
+  border-radius: 20px;
+  background-color: var(--bg-red);
+  border: none;
+  color: var(--text-color);
+  transition: 0.5s;
+  width: 150px;
+  text-align: center;
 }
 
 .cta-btn:hover {
@@ -58,7 +57,7 @@ nav ul {
 
 #hero img {
   width: 100%;
-    width: 100%;
+  width: 100%;
 }
 
 .hcard {
@@ -78,13 +77,13 @@ nav ul {
   object-fit: cover;
 }
 
-.hcard-title{
-    color: var(--text-color);
-    font-weight: bold;
+.hcard-title {
+  color: var(--text-color);
+  font-weight: bold;
 }
-.hcard-content{
-    color: var(--sec-text) ;
-    text-align:justify ;
+.hcard-content {
+  color: var(--sec-text);
+  text-align: justify;
 }
 
 .hidden {
@@ -130,20 +129,20 @@ p.hidden {
   transition-delay: 0.5s;
 }
 
-p.show{
-    opacity: 1;
-    transform:translate(0) ;
+p.show {
+  opacity: 1;
+  transform: translate(0);
 }
 
-img.hidden{
-    opacity: 0;
-    transform: translateX(100%);
-    transition: 0.5s;
+img.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.5s;
 }
 
-img.show{
-    opacity: 1;
-    transform: translate(0);
+img.show {
+  opacity: 1;
+  transform: translate(0);
 }
 
 .touch-btn {
@@ -176,9 +175,9 @@ img.show{
   font-family: "Inria Sans", sans-serif;
   font-optical-sizing: auto;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   font-size: 4rem;
   padding: 0 80px;
@@ -194,13 +193,13 @@ img.show{
 }
 
 .brief {
-  font-size: 1rem; 
+  font-size: 1rem;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .about-touch-btn {
-  margin-top: 10px; 
+  margin-top: 10px;
   height: 40px;
   padding: 0 10px;
   border-radius: 5px;
@@ -212,7 +211,7 @@ img.show{
   font-size: 1.2rem;
 }
 
-.choose-us{
+.choose-us {
   text-align: center;
   font-family: "Inria Sans", sans-serif;
   font-size: 1.8rem;
@@ -261,32 +260,33 @@ img.show{
     padding: 0 5px;
   }
 
-#footer {
+  #footer {
     background-color: #2d2d2d;
     padding: 40px 0;
     color: #767676;
     position: relative;
     margin-top: 300px;
     text-align: justify;
-}
+  }
 
-#footer a{
+  #footer a {
     color: var(--sec-text);
-}
+  }
 
-#footer a:hover{
+  #footer a:hover {
     color: var(--bg-red);
-}
+  }
 
-.social-media a,
-.social-media {
+  .social-media a,
+  .social-media {
     color: rgb(138, 138, 138);
     margin-bottom: 20px;
     font-size: 24px;
     word-spacing: 3ch;
-}
+  }
 
-.social-media a:hover {
+  .social-media a:hover {
     color: var(--bg-red);
     transition: 0.5s;
+  }
 }
