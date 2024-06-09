@@ -18,185 +18,197 @@ a{
     color: var(--bg-red);
 }
 
-body{
-    background-color: var(--bg-color);
-    color: var(--text-color);
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .bg-dark{
     background-color: rgb(28, 28, 28) !important;
 }
 
-.navbar-brand,.nav-link{
-    color: var(--text-color);
+.navbar-brand,
+.nav-link {
+  color: var(--text-color);
 }
 
-.navbar-brand{
-    font-family: monospace;
-    font-size: xx-large;
+.navbar-brand {
+  font-family: monospace;
+  font-size: xx-large;
 }
 
-.navbar-toggler{
-    color: var(--text-color);
-    box-shadow: none;
-    border: 1px solid var(--text-color);
+.navbar-toggler {
+  color: var(--text-color);
+  box-shadow: none;
+  border: 1px solid var(--text-color);
 }
 
 nav ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
-.title{
-    font-size: 3.8vmax;
+.title {
+  font-size: 3.8vmax;
 }
-.content{
-    text-align: justify;
+.content {
+  text-align: justify;
 }
 
 .container .content{
     font-size: larger;
 }
 
-.cta-btn{
-    border-radius: 20px;
-    background-color: var(--bg-red);
-    border: none;
-    color: var(--text-color);
-    transition: 0.5s;
-    width: 150px;
-    text-align: center;
+.container .content{
+    font-size: larger;
 }
 
-.cta-btn:hover{
-background-color: rgb(197, 30, 55);
+.cta-btn {
+  border-radius: 20px;
+  background-color: var(--bg-red);
+  border: none;
+  color: var(--text-color);
+  transition: 0.5s;
+  width: 150px;
+  text-align: center;
+}
+
+.cta-btn:hover {
+  background-color: rgb(197, 30, 55);
 }
 
 #hero img {
-    width: 100%;
+  width: 100%;
+  width: 100%;
 }
 
-.hcard{
-    border-radius: 20px;
-    overflow: hidden;
-    /* background-color: aqua; */
+.hcard {
+  border-radius: 20px;
+  overflow: hidden;
+  /* background-color: aqua; */
 }
 
-.card-container{
-    /* box-sizing: border-box; */
-    width: 100%;
+.card-container {
+  /* box-sizing: border-box; */
+  width: 100%;
 }
 
-.hcard img{
-    width:100%;
-    height: 250px;
-    object-fit: cover;
+.hcard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-.hcard-title{
-    color: var(--text-color);
-    font-weight: bold;
+.hcard-title {
+  color: var(--text-color);
+  font-weight: bold;
 }
-.hcard-content{
-    color: var(--sec-text) ;
-    text-align:justify ;
-}
-
-.hidden{
-    opacity: 0;
-    transition: 0.5s;
-    filter: blur(30);
-    transform: translate(-100%);
+.hcard-content {
+  color: var(--sec-text);
+  text-align: justify;
 }
 
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+  filter: blur(30);
+  transform: translate(-100%);
 }
 
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
 
 .row .hidden:nth-child(2) {
-    transition-delay: 200ms;
+  transition-delay: 200ms;
 }
 
 .row .hidden:nth-child(3) {
-    transition-delay: 300ms;
+  transition-delay: 300ms;
 }
 
 #carouselExampleAutoplaying div div img {
-    height: 300px;
-    object-fit: contain;
+  height: 300px;
+  object-fit: contain;
 }
 
 .get-in-touch {
-    height: 200px;
-    width: 100%;
-    background-image: url("/img/speaker.png");
-    background-size: cover;
+  height: 200px;
+  width: 100%;
+  background-image: url("/img/speaker.png");
+  background-size: cover;
 }
 .banner {
-    width: 350px;
-    font-size: 2rem;
+  width: 350px;
+  font-size: 2rem;
 }
 
-p.hidden{
-    opacity: 0;
-    transform: translateY(-100px);
-    transition-delay: 0.5s;
+p.hidden {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition-delay: 0.5s;
 }
 
-p.show{
-    opacity: 1;
-    transform:translate(0) ;
+p.show {
+  opacity: 1;
+  transform: translate(0);
 }
 
-img.hidden{
-    opacity: 0;
-    transform: translateX(100%);
-    transition: 0.5s;
+img.hidden {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.5s;
 }
 
-img.show{
-    opacity: 1;
-    transform: translate(0);
+img.show {
+  opacity: 1;
+  transform: translate(0);
 }
 
 .touch-btn {
-    height: 50px;
-    border-radius: 5px;
-    background-color: transparent;
-    border-color: var(--bg-red);
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--bg-red);
+  height: 50px;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: var(--bg-red);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--bg-red);
 }
 
-#footer {
+@media (max-width: 991px) {
+  #hero div {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #footer {
     background-color: #2d2d2d;
     padding: 40px 0;
     color: #767676;
     position: relative;
     margin-top: 300px;
     text-align: justify;
-}
+  }
 
-#footer a{
+  #footer a {
     color: var(--sec-text);
-}
+  }
 
-#footer a:hover{
+  #footer a:hover {
     color: var(--bg-red);
-}
+  }
 
-.social-media a,
-.social-media {
+  .social-media a,
+  .social-media {
     color: rgb(138, 138, 138);
     margin-bottom: 20px;
     font-size: 24px;
     word-spacing: 3ch;
-}
+  }
 
-.social-media a:hover {
+  .social-media a:hover {
     color: var(--bg-red);
-    transition: 0.5s;
+  }
 }
