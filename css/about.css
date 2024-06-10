@@ -65,6 +65,11 @@
   color: rgb(197, 30, 55);
 }
 
+.service-one{
+  background-image: url("/img/test.jpg");
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
   .about-hero {
     height: 150px;
