@@ -1,0 +1,29 @@
+#contact img{
+    object-fit:cover;
+    width: 100%;
+}
+
+
+#contact div.col-5{
+    /* border-radius: 20% 0 0 60%; */
+    overflow: hidden;
+    background-color: aqua;
+}
+.bulging-div {
+    position: relative;
+    background-color: #1891b6;
+    border-radius: 10px;
+    margin-left: 50px;
+    
+}
+
+.contact-div{
+    position: relative;
+    background-color: black;
+}
+
+@media (max-width:991px) {
+    .contact-div{
+        top: 20px;
+    }
+}

@@ -1,8 +1,21 @@
-:root {
-  --bg-color: rgb(12, 12, 12);
-  --text-color: rgb(235, 235, 235);
-  --sec-text: rgb(149, 149, 149);
-  --bg-red: rgb(249, 45, 76);
+:root{
+    --bg-color:rgb(12, 12, 12);
+    --text-color:rgb(235, 235, 235);
+    --sec-text:rgb(149, 149, 149);
+    --bg-red:rgb(249, 45, 76);
+}
+
+.bg-white{
+ background-color: var(--text-color);
+ color: var(--bg-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-red{
+    color: var(--bg-red);
 }
 
 body {
@@ -10,8 +23,8 @@ body {
   color: var(--text-color);
 }
 
-.bg-dark {
-  background-color: rgb(28, 28, 28);
+.bg-dark{
+    background-color: rgb(28, 28, 28) !important;
 }
 
 .navbar-brand,
@@ -39,6 +52,14 @@ nav ul {
 }
 .content {
   text-align: justify;
+}
+
+.container .content{
+    font-size: larger;
+}
+
+.container .content{
+    font-size: larger;
 }
 
 .cta-btn {
@@ -189,6 +210,5 @@ img.show {
 
   .social-media a:hover {
     color: var(--bg-red);
-    transition: 0.5s;
   }
 }
