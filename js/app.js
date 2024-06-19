@@ -9,3 +9,4 @@ const hidden_elements = document.querySelectorAll(".hidden");
 hidden_elements.forEach((element) => {
   observer.observe(element);
 });
+
