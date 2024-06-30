@@ -68,7 +68,6 @@ nav ul {
   border: none;
   color: var(--text-color);
   transition: 0.5s;
-  width: 150px;
   text-align: center;
 }
 
@@ -176,6 +175,14 @@ img.show {
   color: var(--bg-red);
 }
 
+#footer a{
+  color: var(--sec-text);
+}
+
+#footer a:hover {
+  color: var(--bg-red);
+}
+
 @media (max-width: 991px) {
   #hero div {
     text-align: center;
@@ -192,13 +199,6 @@ img.show {
     text-align: justify;
   }
 
-  #footer a {
-    color: var(--sec-text);
-  }
-
-  #footer a:hover {
-    color: var(--bg-red);
-  }
 
   .social-media a,
   .social-media {
