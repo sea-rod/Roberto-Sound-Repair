@@ -93,7 +93,7 @@ nav ul {
 
 .hcard img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -185,8 +185,8 @@ img.show {
 
 #footer .social-media a{
   font-size: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #footer a:hover {
