@@ -124,12 +124,12 @@
 }
 
 .fade-in-section {
-  opacity: 0; /* Start with transparency */
-  transition: opacity 1s ease; /* Smooth transition over 1 second */
+  opacity: 0; 
+  transition: opacity 1s ease;
 }
 
 .fade-in-section.visible {
-  opacity: 1; /* Show when 'visible' class is added */
+  opacity: 1; 
 }
 
 .hidden {
@@ -150,4 +150,23 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+
+@keyframes flicker {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.flicker {
+  animation: flicker 1.5s ease-in-out forwards;
+}
+
+.hidden-flicker {
+  opacity: 0;
+}
+
+.reveal {
+  opacity: 1;
+  transition: opacity 1s ease-in;
 }

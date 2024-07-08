@@ -42,3 +42,25 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const flickerSections = document.querySelectorAll('.hidden-flicker');
+
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    flickerSections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < windowHeight && !section.classList.contains('reveal')) {
+        section.classList.add('flicker');
+        setTimeout(() => {
+          section.classList.remove('hidden-flicker');
+          section.classList.remove('flicker');
+          section.classList.add('reveal');
+        }, 1500); // Match this duration with your flicker animation duration
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Run on load in case elements are already in view
+});
