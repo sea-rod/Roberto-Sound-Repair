@@ -1,49 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("slide-in");
-            observer.unobserve(entry.target); // Stop observing after the animation
-          }
-        });
-      },
-      { threshold: 0 }
-    );
-  
-    const featurettes = document.querySelectorAll(".featurette");
-    featurettes.forEach((featurette) => {
-      featurette.classList.add("hidden"); // Initial hidden state
-      observer.observe(featurette);
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Define a callback function to handle intersection events
-    function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Add 'visible' class to the intersecting element
-                entry.target.classList.add('visible');
-                // Unobserve the element after it is animated to improve performance
-                observer.unobserve(entry.target);
-            }
-        });
-    }
-
-    // Create a new Intersection Observer instance
-    const observer = new IntersectionObserver(handleIntersection, {
-        threshold: 0.5 // Trigger when 50% of the element is visible
+  // Intersection Observer for fade-in effect
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
+  };
 
-    // Observe all elements with the class 'fade-in-section'
-    const sections = document.querySelectorAll('.fade-in-section');
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
+  const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  });
 
-document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('.fade-in-section');
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  // Flicker animation on scroll (if applicable)
   const flickerSections = document.querySelectorAll('.hidden-flicker');
 
   const revealOnScroll = () => {
@@ -56,11 +31,29 @@ document.addEventListener('DOMContentLoaded', function () {
           section.classList.remove('hidden-flicker');
           section.classList.remove('flicker');
           section.classList.add('reveal');
-        }, 1500); // Match this duration with your flicker animation duration
+        }, 1000); // Adjust this duration to match your flicker animation duration (if applicable)
       }
     });
   };
 
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // Run on load in case elements are already in view
+
+  // Sequential animations for top content and columns
+  const topElements = document.querySelectorAll(".top-animate");
+  const columnElements = document.querySelectorAll(".column-animate");
+
+  const addAnimationClasses = (elements, animationClass) => {
+    elements.forEach((element, index) => {
+      element.style.animationDelay = `${index * 0.3}s`; // Adjust delay for faster animation start
+      element.style.animationDuration = '0.5s'; // Adjust animation duration for faster fade-in
+      element.classList.add(animationClass);
+    });
+  };
+
+  const topAnimationDuration = 500; // Adjust animation duration for faster fade-in
+  setTimeout(() => {
+    addAnimationClasses(topElements, "fadeInLeftAnimation");
+    addAnimationClasses(columnElements, "fadeInAnimation");
+  }, topAnimationDuration);
 });

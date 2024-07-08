@@ -170,3 +170,37 @@
   opacity: 1;
   transition: opacity 1s ease-in;
 }
+
+/* Fade in from left animation for top content */
+.top-animate {
+  opacity: 0;
+  animation: fadeInLeftAnimation 0.5s ease-in-out forwards; /* Adjust animation duration */
+}
+
+@keyframes fadeInLeftAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade in animation for columns after top content has appeared */
+.animate-columns .column-animate {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in-out forwards; /* Adjust animation duration */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
