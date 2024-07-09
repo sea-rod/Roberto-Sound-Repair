@@ -46,7 +46,7 @@
     position: relative;
     object-fit: cover;
     height: 100%;
-    /* opacity: 0.5 */
+    opacity: 0.5
 }
 
 .fade{
