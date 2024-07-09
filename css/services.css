@@ -34,13 +34,10 @@
 
 }
 
-.content{
-    height: 100vh;
-}
+.content div {
+     height: 100%;
+ }
 
-.content div{
-    height: 100%;
-}
 
 .content div img{
     position: relative;
@@ -76,4 +73,10 @@
         transform: scale(3);
        
     }
+}
+@media (min-width: 576px) {
+    .content {
+            height: 100vh;
+        }
+   
 }
