@@ -189,7 +189,11 @@ img.show {
   padding-right: 15px;
 }
 
-#footer a:hover {
+#footer a:hover,
+a.nav-link:active,
+a.nav-link:focus,
+a.nav-link:hover,
+.navbar-brand:hover {
   color: var(--bg-red);
 }
 
