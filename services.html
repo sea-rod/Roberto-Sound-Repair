@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="/css/services.css" />
     <title>Document</title>
   </head>
-  <body onscroll="scroll_()">
+  <body>
     <nav class="navbar navbar-expand-lg bg-dark text-white">
       <div class="container-fluid">
-        <a class="navbar-brand ms-lg-5" href="#">Roberto.P Lobo</a>
+        <a class="navbar-brand ms-lg-5" href="/">Roberto.P Lobo</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -36,13 +36,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item mx-lg-5">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item mx-lg-5">
               <a class="nav-link" href="/about.html">About Us</a>
             </li>
             <li class="nav-item mx-lg-5">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="./services.html">Services</a>
             </li>
             <hr />
             <li class="nav-item me-4 ms-lg-5 my-auto">
@@ -78,16 +78,19 @@
         </p>
       </div>
     </div>
-    <div class="vh-100 row d-flex mt-5 text-lg-start text-center justify-content-around mx-lg-5 pt-5">
-      <div class="col-12 col-lg-5 fade me-5">
+    <div
+      id="speaker-repair"
+      class="row content fade d-flex mt-5 text-lg-start align-items-stretch text-center justify-content-around mx-lg-5 pt-5 mx-1"
+    >
+      <div class="col-12 col-lg-5 fade">
         <p class="title">Speaker Repair</p>
         <p>
           From blown drivers to connection issues, our skilled technicians
           diagnose and fix all types of speaker problems, ensuring you get back
           to enjoying crystal-clear sound. We Repair speakers like:
         </p>
-        <div class="d-flex justify-content-around text-start">
-          <ul>
+        <div class="d-flex justify-content-between bg-rimary text-start">
+          <ul class="col-6">
             <li>JBL</li>
             <li>RCF</li>
             <li>Bose</li>
@@ -98,7 +101,7 @@
             <li>Electro Voice</li>
             <li>Pioneer</li>
           </ul>
-          <ul>
+          <ul class="col-6">
             <li>18 Sound</li>
             <li>Ohm</li>
             <li>L Acoustic</li>
@@ -110,13 +113,16 @@
           </ul>
         </div>
       </div>
-      <div class="col-12 col-lg-6 fade mt-3">
-        <img src="./img/speaker.jpg" width="100%" alt="" />
+      <div class="col-11 col-lg-6 px-0">
+        <img src="./img/speaker repair.jpeg" width="100%" alt="" />
       </div>
     </div>
 
-    <div class="vh-100 fade row d-flex mt-5 text-lg-start text-center justify-content-around mx-lg-5 pt-5">
-      <div class="col-12 col-lg-5 me-5">
+    <div
+      id="mic-repair"
+      class="fade content row d-flex flex-lg-row-reverse mt-5 text-lg-start text-center justify-content-around mx-lg-5 pt-5 mx-1"
+    >
+      <div class="col-12 col-lg-5">
         <p class="title">Microphone and Cable Repair</p>
         <p>
           Whether your mic has lost its clarity, stopped working altogether, or
@@ -127,12 +133,14 @@
           audio equipment is back to performing at its best.
         </p>
       </div>
-      <div class="col-11 col-lg-6 mt-3">
-        <img src="./img/speaker.jpg" width="100%" alt="" />
+      <div class="col-11 col-lg-6 mt-3 px-0">
+        <img src="./img/cable2.jpg" width="100%" alt="" />
       </div>
     </div>
 
-    <div class="vh-100 fade row d-flex mt-5 text-lg-start text-center justify-content-around mx-lg-5 pt-5">
+    <div
+      class="fade content row d-flex mt-5 text-lg-start text-center justify-content-around mx-lg-5 pt-5 mx-1"
+    >
       <div class="col-12 col-lg-5 me-5">
         <p class="title">Speaker Cabinet repair and Maintenance</p>
         <p>
@@ -147,11 +155,14 @@
           appearance.
         </p>
       </div>
-      <div class="col-11 col-lg-6 mt-3">
+      <div class="col-11 col-lg-6 mt-3 px-0">
         <img src="./img/speaker.jpg" width="100%" alt="" />
       </div>
     </div>
-    <div class="vh-100 fade row d-flex text-lg-start text-center justify-content-around mx-lg-5 pt-5">
+    <div
+      id="light-repair"
+      class="fade content row d-flex flex-lg-row-reverse mt-5 text-lg-start text-center justify-content-around mx-lg-5 pt-5 mx-1"
+    >
       <div class="col-12 col-lg-5 me-5">
         <p class="title">Light Repair</p>
         <p>
@@ -159,17 +170,67 @@
           handle everything from simple bulb replacements to complex electronic
           fixes, ensuring your lighting setup is always show-ready. We repair
           lights like:
-          <ul class="text-start">
-            <li>Sharpies</li>
-            <li>Par Can Light</li>
-            <li>Smoke Machine</li>
-            <li>And other kind of light</li>
-          </ul>
         </p>
+        <ul class="text-start">
+          <li>Sharpies</li>
+          <li>Par Can Light</li>
+          <li>Smoke Machine</li>
+          <li>And other kind of light</li>
+        </ul>
       </div>
-      <div class="col-11 col-lg-6">
-        <img src="./img/speaker.jpg" width="100%" alt="" />
+      <div class="col-11 col-lg-6 px-0">
+        <img src="./img/light5.jpg" class="img" width="100%" alt="" />
       </div>
     </div>
+    <footer id="footer" class="pb-5 vh-100 d-flex flex-column">
+      <div class="mx-lg-5 mx-3 d-flex flex-wrap justify-content-between pt-5">
+        <div class="me-2 col-lg-5">
+          <p class="h4 text-red">Roberto</p>
+          <p>
+            <span class="fw-bold"> Your satisfaction is our pleasure </span>
+            Expert repairs for speakers, microphones, and all audio equipment.
+            Trust Roberto to bring your sound back to life. Quality service
+            guaranteed. Contact us today!
+            <br />
+          </p>
+        </div>
+
+        <div class="me-2">
+          <p class="h4 text-red">Contact Us</p>
+          <a href="mailto:robertolobo1998@gmail.com">
+            <span class="fa fa-envelope"></span>
+            robertolobo1998@gmail.com
+          </a>
+          <a href="tel:+91 9822114398" class="d-block">
+            <span class="fa fa-phone"></span>
+            +91 9822114398
+          </a>
+          <a href="tel:+91 8379965033" class="d-block">
+            <span class="fa fa-phone"></span>
+            +91 8379965033
+          </a>
+        </div>
+        <div class="me-2">
+          <p class="h4 text-red">Quick links</p>
+          <a class="d-block" href="/">Home</a>
+          <a class="d-block" href="./services.html">Services</a>
+          <a class="d-block" href="./about.html">About Us</a>
+          <a class="d-block" href="./contact.html">Contacts</a>
+        </div>
+      </div>
+      <div class="social-media text-center mt-auto">
+        <hr />
+        <a href="https://www.instagram.com/roberto.plobo/" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="mailto:robertolobo1998@gmail.com"
+          ><i class="fa fa-envelope"></i
+        ></a>
+      </div>
+      <div class="footer-copyright text-center col-12">
+        © 2024 Copyright:
+        <a href="/"><span class="text-red"> Roberto.P Lobo </span> </a>
+      </div>
+    </footer>
   </body>
 </html>

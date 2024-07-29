@@ -68,7 +68,6 @@ nav ul {
   border: none;
   color: var(--text-color);
   transition: 0.5s;
-  width: 150px;
   text-align: center;
 }
 
@@ -94,7 +93,7 @@ nav ul {
 
 .hcard img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -176,6 +175,28 @@ img.show {
   color: var(--bg-red);
 }
 
+#footer{
+  margin-top: 200px;
+}
+
+#footer a{
+  color: var(--sec-text);
+}
+
+#footer .social-media a{
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#footer a:hover,
+a.nav-link:active,
+a.nav-link:focus,
+a.nav-link:hover,
+.navbar-brand:hover {
+  color: var(--bg-red);
+}
+
 @media (max-width: 991px) {
   #hero div {
     text-align: center;
@@ -192,13 +213,6 @@ img.show {
     text-align: justify;
   }
 
-  #footer a {
-    color: var(--sec-text);
-  }
-
-  #footer a:hover {
-    color: var(--bg-red);
-  }
 
   .social-media a,
   .social-media {

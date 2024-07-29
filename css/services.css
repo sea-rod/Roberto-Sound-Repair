@@ -1,3 +1,7 @@
+/* html,body{
+    height: 100%;
+} */
+
 .hero{
     height: 90vh;
 }
@@ -30,6 +34,18 @@
 
 }
 
+.content div {
+     height: 100%;
+ }
+
+
+.content div img{
+    position: relative;
+    object-fit: cover;
+    height: 300px;
+    opacity: 0.5
+}
+
 .fade{
     animation: fade-in forwards;
     animation-timeline: view();
@@ -57,4 +73,12 @@
         transform: scale(3);
        
     }
+}
+@media (min-width: 576px) {
+    .content {
+            height: 100vh;
+        }
+   .content div img {
+    height: 100%;
+   }
 }
